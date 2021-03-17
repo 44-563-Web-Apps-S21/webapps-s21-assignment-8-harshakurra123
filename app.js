@@ -14,4 +14,5 @@ const server =
 
 server.listen(port, hostname, () => {   //Start the server
   console.log(`Server running at http://${hostname}:${port}/`)  //Log the request
+  console.log(`I like to be fit`)
 })
