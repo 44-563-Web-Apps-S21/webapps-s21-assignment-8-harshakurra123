@@ -8,11 +8,11 @@ const server =
     (req,res)=> {               //Anonymous function to handle the request
       res.statusCode = 200      //code for OK
       res.setHeader('Content-Type', 'text/plain') //Set the mime type
+      res.write(`I like to be fit \n`)
       res.end('Hello World')    //Close the response and provide content
     }                           //No return needed, we modified the res object we got
 )
 
 server.listen(port, hostname, () => {   //Start the server
   console.log(`Server running at http://${hostname}:${port}/`)  //Log the request
-  console.log(`I like to be fit`)
 })
