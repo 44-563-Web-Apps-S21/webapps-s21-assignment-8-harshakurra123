@@ -24,8 +24,8 @@ const server =
           // Process the queries here
           res.statusCode = 200      //code for OK
           res.setHeader('Content-Type', 'text/plain') 
-          var x = `f(${search_params.get("x")}) is ${Math.ceil(search_params.get("x"))}`
-          var y = `f(${search_params.get("y")}) is ${Math.ceil(search_params.get("y"))}`
+          var x = `Math.ceil(${search_params.get("x")}) is ${Math.ceil(search_params.get("x"))}`
+          var y = `Math.ceil(${search_params.get("y")}) is ${Math.ceil(search_params.get("y"))}`
           res.write(x +" and "+ y+"\n")
           res.write("You rang?")
           res.end();

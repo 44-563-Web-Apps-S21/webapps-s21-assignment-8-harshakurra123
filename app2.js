@@ -10,7 +10,7 @@ const server =
       res.setHeader('Content-Type', 'text/html') //Set the mime type HTML
 
       res.write('<html> <head> <title> Served </title> </head>')
-      res.write('<body>')
+      res.write('<body><style>table, th, td {border: 2px solid black;border-collapse: collapse;}</style>')
       res.write('Content \n')
       res.write('More content \n')
       res.write('Hello World')
